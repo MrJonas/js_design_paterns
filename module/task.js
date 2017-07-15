@@ -1,9 +1,7 @@
 
-var repo = require('./taskRepository');
-
 //Constructor pattern
-var Task = function (name) {
-    this.name = name;
+var Task = function (data) {
+    this.name = data.name;
     this.completed = false;
 };
 
@@ -15,7 +13,6 @@ Task.prototype.complete = function () {
 
 Task.prototype.save = function () {
     console.log('saving Task: ' + this.name);
-    repo.save(this);
 };
 
 module.exports = Task;
