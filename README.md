@@ -2,4 +2,15 @@
 
 Creational:
 
-* constructot patern
+* constructor
+* module
+* factories
+* singletons
+
+Structual:
+
+* decorator
+* facade
+* flyweight
+
+Behavioral:
